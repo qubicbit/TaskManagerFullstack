@@ -1,0 +1,77 @@
+/* src/pages/Public/Register.css */
+
+.register-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 32px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  color: var(--text);
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-form input {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--input-bg);
+  color: var(--text);
+  transition: border-color 0.2s ease;
+}
+
+.register-form input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.register-form button {
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.register-form button:hover {
+  background: var(--primary-hover);
+}
+
+.register-form button:disabled {
+  background: var(--border);
+  cursor: not-allowed;
+}
+
+.register-error {
+  color: #d32f2f; /* semantisk röd */
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-login-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-login-link:hover {
+  text-decoration: underline;
+}

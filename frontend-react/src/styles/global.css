@@ -1,0 +1,78 @@
+/* File: src/styles/global.css */
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --bg: #f9fafb;
+        --text: #111827;
+        --text-muted: #6b7280;
+        --header-bg: #ffffff;
+        --border: #e5e7eb;
+
+        /* Primary (blue) */
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+        --primary-dark: #1e40af;
+
+        /* Inputs & cards */
+        --input-bg: #ffffff;
+        --card-bg: #ffffff;
+
+        /* Danger (red) */
+        --danger: #dc2626;
+        --danger-hover: #b91c1c;
+    }
+
+    .dark {
+        --bg: #1f2937;
+        --text: #f3f4f6;
+        --text-muted: #9ca3af;
+        --header-bg: #111827;
+        --border: #374151;
+
+        /* Primary dark mode */
+        --primary: #3b82f6;
+        --primary-hover: #2563eb;
+        --primary-dark: #1d4ed8;
+
+        /* Inputs & cards */
+        --input-bg: #111827;
+        --card-bg: #1f2937;
+
+        /* Danger dark mode */
+        --danger: #ef4444;
+        --danger-hover: #dc2626;
+    }
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 0.65rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-primary:active {
+    transform: scale(0.97);
+}
+
+.btn-small {
+    background: var(--primary);
+    color: white;
+    padding: 0.35rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}

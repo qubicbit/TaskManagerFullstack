@@ -1,0 +1,12 @@
+// src/components/tasks/TaskList.css
+.task-list {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.task-list-empty {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}

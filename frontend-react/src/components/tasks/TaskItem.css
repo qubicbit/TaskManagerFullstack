@@ -1,0 +1,63 @@
+/* File: src/components/tasks/TaskItem.css */
+
+.task-item {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item-title {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.task-item-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.task-item-edit {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 0.85rem;
+}
+
+.task-item-edit:hover {
+    background: var(--border);
+}
+
+.task-item-delete {
+    background: rgba(220, 38, 38, 0.12);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #dc2626;
+    font-size: 0.85rem;
+}
+
+.task-item-delete:hover {
+    background: rgba(220, 38, 38, 0.18);
+    border-color: #dc2626;
+}
+
+.task-item-desc {
+    color: var(--text-muted);
+    line-height: 1.4;
+    font-size: 0.9rem;
+}

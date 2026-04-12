@@ -1,0 +1,25 @@
+.task-create-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.task-create-page h1 {
+    margin-bottom: 1.5rem;
+}
+.btn-edit {
+    background: var(--primary);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.btn-edit:hover {
+    background: var(--primary-hover);
+}

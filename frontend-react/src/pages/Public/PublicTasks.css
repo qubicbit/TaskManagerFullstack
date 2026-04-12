@@ -1,0 +1,108 @@
+/* File: src/pages/Public/PublicTasks.css */
+
+/* PAGE WRAPPER */
+.public-tasks-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: var(--text);
+}
+
+/* TITLE */
+.public-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+/* SLIDER WRAPPER */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SLIDER TRACK */
+.slider-track {
+    display: flex;
+    transition: transform 0.45s ease;
+    width: 100%;
+    touch-action: pan-y;
+}
+
+/* EACH SLIDE */
+.slider-card {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0.5rem;
+}
+
+/* CARD WIDTH INSIDE SLIDER */
+.public-task-card {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* SLIDER CONTROLS */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.slider-controls button {
+    background: var(--primary);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.15s ease;
+}
+
+.slider-controls button:hover:not(:disabled) {
+    background: var(--primary-hover);
+}
+
+.slider-controls button:disabled {
+    background: var(--border);
+    cursor: not-allowed;
+}
+
+.slider-controls span {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* FADE ANIMATION */
+.fade-enter-active {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .public-task-card {
+        max-width: 100%;
+    }
+
+    .slider-controls {
+        gap: 0.8rem;
+    }
+}

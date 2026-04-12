@@ -1,0 +1,30 @@
+.theme-toggle-btn {
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+/* Light mode */
+.theme-toggle-btn.light {
+    background: var(--bg-secondary);
+}
+
+.theme-toggle-btn.light:hover {
+    background: var(--border);
+}
+
+/* Dark mode */
+.theme-toggle-btn.dark {
+    background: var(--bg-secondary);
+    color: var(--text);
+}
+
+.theme-toggle-btn.dark:hover {
+    background: var(--border);
+}

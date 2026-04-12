@@ -1,0 +1,76 @@
+/* NAVBAR WRAPPER */
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.navbar-logo {
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+        transition: color 0.15s ease, opacity 0.15s ease;
+
+}
+
+/* RIGHT SIDE */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* LINKS */
+.navbar-link {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.navbar-link:hover {
+    color: var(--primary);
+}
+
+/* BUTTON (REGISTER / CTA) */
+.navbar-button {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.15s ease;
+}
+
+.navbar-button:hover {
+    background: var(--primary-hover);
+}
+
+/* LOGOUT BUTTON */
+.navbar-logout {
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.15s ease;
+}
+
+.navbar-logout:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.navbar-logo:hover {
+    color: var(--primary);    
+    opacity: 0.85;            
+}

@@ -1,0 +1,19 @@
+// src/pages/User/EditProfile.css
+
+/* PAGE TITLE ONLY — layout comes from Profile.css */
+.edit-profile-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .edit-profile-title {
+    font-size: 20px;
+  }
+}
+.edit-profile-title {
+  margin-bottom: 28px;
+}

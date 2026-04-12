@@ -1,0 +1,15 @@
+/* File: src/pages/MyTasks.css */
+
+.my-tasks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.my-tasks-loading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}

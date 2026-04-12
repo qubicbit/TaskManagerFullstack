@@ -1,0 +1,117 @@
+// src/components/tasks/TaskDetails.css
+/* Container */
+.task-detail {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text);
+}
+
+/* Title */
+.task-detail-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--text);
+}
+
+/* Status */
+.task-detail-status {
+    margin-bottom: 1.2rem;
+}
+
+.status-completed {
+    color: #16a34a; /* grön */
+    font-weight: 700;
+}
+
+.status-pending {
+    color: #dc2626; /* röd */
+    font-weight: 700;
+}
+
+/* Description */
+.task-detail-description {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.55;
+}
+
+/* Meta info */
+.task-detail-meta p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Deadline colors */
+.deadline-overdue {
+    color: #dc2626 !important;
+    font-weight: 600;
+}
+
+.deadline-soon {
+    color: #f59e0b !important;
+    font-weight: 600;
+}
+
+.deadline-far {
+    color: #16a34a !important;
+    font-weight: 600;
+}
+
+/* Tags */
+.task-detail-tags {
+    margin-top: 1.5rem;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.tag {
+    background: var(--bg-secondary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Comments section */
+.task-detail-comments {
+    margin-top: 2rem;
+}
+
+.task-detail-comments h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+/* Individual comment */
+.comment {
+    background: var(--bg-secondary);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--border);
+}
+
+.comment-text {
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.comment-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}

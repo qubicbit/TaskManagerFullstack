@@ -1,0 +1,119 @@
+/* CARD WRAPPER */
+.task-card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 1.6rem 1.8rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    cursor: pointer;
+    width: 100%;
+    color: var(--text);
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLE */
+.task-card h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+    white-space: normal;
+}
+
+/* DESCRIPTION */
+.task-card-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* META: STATUS + CREATED */
+.task-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+}
+
+/* STATUS COLORS */
+.status-completed {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.status-pending {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+/* DEADLINE */
+.task-card-deadline {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+/* DEADLINE COLORS */
+.deadline-overdue {
+    color: #dc2626;
+}
+
+.deadline-soon {
+    color: #f59e0b;
+}
+
+.deadline-far {
+    color: #16a34a;
+}
+
+/* CATEGORY */
+.task-card-category {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* TAGS */
+.task-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.tag {
+    background: var(--bg-secondary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .task-card {
+        padding: 1.3rem 1.4rem;
+    }
+
+    .task-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .task-card-desc {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,45 @@
+.admin-user-edit {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.admin-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="email"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.checkbox-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-form button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+.cancel-btn {
+    background: #e5e7eb;
+}

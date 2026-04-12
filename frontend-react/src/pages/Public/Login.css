@@ -1,0 +1,101 @@
+/* WRAPPER */
+.login-container {
+  max-width: 380px;
+  margin: 100px auto;
+  padding: 32px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  color: var(--text);
+}
+
+/* TITLE */
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* FORM */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--input-bg);
+  color: var(--text);
+  transition: border-color 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* BUTTON */
+.login-form button {
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.login-form button:hover {
+  background: var(--primary-hover);
+}
+
+.login-form button:disabled {
+  background: var(--border);
+  cursor: not-allowed;
+}
+
+/* ERROR MESSAGE */
+.login-error {
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+/* CREATE ACCOUNT LINK */
+.login-register-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.login-register-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-register-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 60px 16px;
+    padding: 24px;
+  }
+
+  .login-container h1 {
+    font-size: 22px;
+  }
+}

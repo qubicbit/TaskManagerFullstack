@@ -1,0 +1,10 @@
+// src/pages/User/Tasks/UserTaskEditPage.css
+.task-edit-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.task-edit-page h1 {
+    margin-bottom: 1.5rem;
+}

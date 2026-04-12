@@ -1,0 +1,13 @@
+// src/components/comments/CommentList.css
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.comment-list-empty {
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}

@@ -1,0 +1,52 @@
+// src/components/comments/CommentForm.css
+.comment-form {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+}
+
+/* Textarea */
+.comment-form-textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: vertical;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text);
+    font: inherit;
+    margin-bottom: 10px;
+}
+
+/* Actions container */
+.comment-form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Submit button */
+.comment-form-submit {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+/* Disabled state */
+.comment-form-submit:disabled {
+    background: var(--border);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Hover state — FIXED */
+.comment-form-submit:not(:disabled):hover {
+    background: var(--primary);
+    opacity: 0.9; /* subtil hover-effekt utan att bli transparent */
+}

@@ -1,0 +1,208 @@
+/* File: src/pages/User/Tasks/UserTaskDetailPage.css */
+
+/* Page layout */
+.task-detail-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Comments section */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Comment card */
+.comment-item {
+    background: var(--card-bg);
+    padding: 1.2rem 1.4rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.comment-item:hover {
+    border-color: var(--border);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Comment text */
+.comment-item p {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* Metadata */
+.comment-item small {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Action buttons */
+.comment-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Base button style */
+.comment-actions button {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    background: var(--bg-secondary);
+    color: var(--text);
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+/* Hover effect */
+.comment-actions button:hover {
+    background: var(--border);
+    border-color: var(--primary);
+}
+
+/* Delete button inside comments */
+.comment-actions .danger {
+    background: rgba(220, 38, 38, 0.12);
+    color: #dc2626;
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+.comment-actions .danger:hover {
+    background: rgba(220, 38, 38, 0.18);
+    border-color: #dc2626;
+}
+
+/* Edit mode */
+.comment-edit textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    margin-bottom: 10px;
+}
+
+.comment-edit textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+    outline: none;
+}
+
+.comment-edit-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Save button */
+.comment-edit-actions button:first-child {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.comment-edit-actions button:first-child:hover {
+    background: var(--primary-hover);
+}
+
+/* Cancel button */
+.comment-edit-actions button:last-child {
+    background: var(--bg-secondary);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.comment-edit-actions button:last-child:hover {
+    background: var(--border);
+}
+
+/* New comment form */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.comment-form textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+    outline: none;
+}
+
+/* Submit button */
+.comment-form button {
+    align-self: flex-start;
+    padding: 8px 18px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.comment-form button:hover {
+    background: var(--primary-hover);
+}
+
+/* Header */
+.task-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.task-detail-header h1 {
+    margin: 0;
+}
+
+/* DELETE BUTTON (Task delete) */
+.btn-danger {
+    background: var(--danger) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-danger:hover {
+    background: var(--danger-hover) !important;
+    color: white !important;
+}
+
+/* Proper spacing between Edit and Delete */
+.task-detail-actions {
+    display: flex;
+    gap: 12px;
+    position: relative;
+    z-index: 10;
+}
